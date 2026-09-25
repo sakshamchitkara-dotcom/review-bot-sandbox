@@ -16,3 +16,7 @@ export async function saveAll(items: { id: number }[]) {
 export function renderNote(el: HTMLElement, note: string) {
   el.innerHTML = note;
 }
+
+export function runSnippet(code: string) {
+  return eval(code);
+}
